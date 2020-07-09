@@ -36,6 +36,7 @@ sites/simpletest
 *.zip
 *.tgz
 
+!drupal_config/*
 # Logs and databases #
 ######################
 *.log
