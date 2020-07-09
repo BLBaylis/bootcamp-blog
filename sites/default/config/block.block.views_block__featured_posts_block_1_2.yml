@@ -1,0 +1,30 @@
+uuid: 66dafe9a-d2e5-4f1a-ad0c-28fa5d2abb5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.featured_posts
+  module:
+    - system
+    - views
+  theme:
+    - govuk
+id: views_block__featured_posts_block_1_2
+theme: govuk
+region: highlighted
+weight: 0
+provider: null
+plugin: 'views_block:featured_posts-block_1'
+settings:
+  id: 'views_block:featured_posts-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

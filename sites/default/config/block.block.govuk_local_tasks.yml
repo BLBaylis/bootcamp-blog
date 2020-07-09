@@ -1,0 +1,22 @@
+uuid: c3a8dfe1-ff89-4b97-be24-d4208a3cd3a0
+langcode: en
+status: true
+dependencies:
+  theme:
+    - govuk
+_core:
+  default_config_hash: xhzCwUpz1737N-6JlCQlC1xgPR6sAj5FnYAGbIaiwHw
+id: govuk_local_tasks
+theme: govuk
+region: content
+weight: -1
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }
