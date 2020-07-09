@@ -21,6 +21,7 @@
         "drupal/core-recommended": "^8.8",
         "drupal/core-vendor-hardening": "^8.8",
         "drupal/devel": "^4.0",
+        "drupal/govuk_theme": "^1.6",
         "drush/drush": "^10.3"
     },
     "conflict": {
