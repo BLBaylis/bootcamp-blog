@@ -85,6 +85,9 @@
       page.content.govuk_local_tasks|render|striptags|trim is not empty ? 'has-local-tasks'
     ]
   %}
+  {% if page.highlighted %}
+    {{ page.highlighted }}
+  {% endif %}
   <main {{ attributes.addClass(main_classes) }} id="main-content" role="main">
     <div class="govuk-grid-row">
       {% if page.sidebar_first %}
