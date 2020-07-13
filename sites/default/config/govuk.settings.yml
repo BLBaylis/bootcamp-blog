@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 govuk_breadcrumb: 0
 search_box: 0
 govuk_cookie: 0
@@ -18,15 +17,3 @@ logo:
   path: ''
 favicon:
   use_default: 1
-||||||| e981d1352
-=======
-govuk_breadcrumb: 1
-search_box: 1
-govuk_cookie: 1
-govuk_phase_banner: alpha
-phase_banner_message:
-  format: full_html
-  value: 'This is a new service – your <a class="govuk-link" href="/contact/feedback">feedback</a> will help us to improve it.'
-_core:
-  default_config_hash: nS-G7Is2pUbuItsDst0AbnICh25x6m3ID0MmgM0mkrc
->>>>>>> 5960f75509be2bad4ce7d76019c45ffdc7582004
