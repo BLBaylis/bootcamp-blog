@@ -4860,6 +4860,15 @@ h5 {
           width: 100%;
           display: block; }
 
+.responsive-img {
+  width: 100%;
+  height: auto; }
+
+.featured-posts__wrapper {
+  background: #f3f2f1;
+  padding: 30px;
+  margin-bottom: 30px; }
+
 .views-view-grid .views-row.featured-grid-row {
   margin-left: -15px;
   margin-right: -15px;
@@ -4870,9 +4879,37 @@ h5 {
   padding: 0 15px;
   box-sizing: border-box; }
 
-.post__image--featured {
-  height: auto;
-  width: 100%; }
+.post-list__image-wrapper {
+  max-width: 150px;
+  flex-shrink: 0;
+  margin-right: 15px; }
+
+.post-list__row {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #b1b4b6;
+  padding: 30px 0 15px 0; }
+
+.post-list__info-wrapper, .post__tags {
+  word-break: break-word;
+  overflow-wrap: break-word; }
+
+.post-list__info-wrapper-header {
+  margin-top: 0; }
+
+.post__layout-wrapper--teaser {
+  display: flex; }
+
+.post__col-1--teaser.group-left {
+  margin-right: 15px;
+  width: auto; }
+
+.post__col-2--teaser.group-right {
+  float: initial;
+  flex-grow: 1; }
+
+.post__image-wrapper--teaser {
+  max-width: 150px; }
 
 .post__date, .post__tags-label {
   color: #626a6e; }

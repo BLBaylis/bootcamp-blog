@@ -1,0 +1,31 @@
+uuid: d954a3b1-1645-48a9-ab4d-49757efa89b9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d2ed51fc-a23e-4c2e-af55-acb4cd66b94f'
+  module:
+    - block_content
+    - system
+  theme:
+    - govuk
+id: maintitle
+theme: govuk
+region: content
+weight: -5
+provider: null
+plugin: 'block_content:d2ed51fc-a23e-4c2e-af55-acb4cd66b94f'
+settings:
+  id: 'block_content:d2ed51fc-a23e-4c2e-af55-acb4cd66b94f'
+  label: 'Main Title'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

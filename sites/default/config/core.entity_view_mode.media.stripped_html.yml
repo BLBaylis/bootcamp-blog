@@ -1,0 +1,10 @@
+uuid: ee478ee2-e874-4e18-ab9b-00dfef68bda6
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.stripped_html
+label: 'Stripped HTML'
+targetEntityType: media
+cache: true

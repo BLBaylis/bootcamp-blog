@@ -1,0 +1,31 @@
+uuid: 332895be-71e2-4646-8a2c-dd0852842a56
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_post_tags
+    - node.type.post
+    - taxonomy.vocabulary.skill_level
+    - taxonomy.vocabulary.topics
+id: node.post.field_post_tags
+field_name: field_post_tags
+entity_type: node
+bundle: post
+label: 'Post Tags'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      skill_level: skill_level
+      topics: topics
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: topics
+field_type: entity_reference

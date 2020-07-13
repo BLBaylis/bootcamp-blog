@@ -1,0 +1,100 @@
+uuid: 61b6700e-e709-48de-9c4c-90abafb4a40a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.featured
+    - field.field.node.post.body
+    - field.field.node.post.field_post_tags
+    - field.field.node.post.field_post_thumbnail
+    - node.type.post
+  module:
+    - ds
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - field_post_thumbnail
+        - node_post_date
+        - field_post_tags
+        - node_title
+        - node_links
+    fields:
+      node_links:
+        plugin_id: node_links
+        weight: 4
+        label: hidden
+        formatter: default
+      node_post_date:
+        plugin_id: node_post_date
+        weight: 1
+        label: hidden
+        formatter: ds_post_date_short
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+      node_title:
+        plugin_id: node_title
+        weight: 3
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h2
+          class: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+id: node.post.featured
+targetEntityType: node
+bundle: post
+mode: featured
+content:
+  field_post_thumbnail:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: stripped_html
+      link: false
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            classes:
+              - featured_posts__image
+            lb-col: false
+    region: ds_content
+hidden:
+  body: true
+  field_post_tags: true
+  links: true

@@ -1,0 +1,15 @@
+disabled: false
+field_template: true
+ft-default: default
+ft-show-colon: false
+classes:
+  region:
+    - custom-region-class--content
+    - custom-region-class--layout
+  field:
+    - posts__image--featured
+    - featured_posts__tags
+    - featured_posts__links
+use_field_names: true
+_core:
+  default_config_hash: xfB0qOeoAomOThclNNokdKTrVwXLcXz13SU3-4a5-FY

@@ -1,0 +1,33 @@
+uuid: 4619a4eb-c4cf-4393-85d9-3ee801a86b08
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_post_thumbnail
+    - media.type.image
+    - node.type.post
+  content:
+    - 'media:image:b6136ee2-4333-4809-9a91-79e99b824aed'
+id: node.post.field_post_thumbnail
+field_name: field_post_thumbnail
+entity_type: node
+bundle: post
+label: 'Post Thumbnail'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    weight: '0'
+    target_uuid: b6136ee2-4333-4809-9a91-79e99b824aed
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

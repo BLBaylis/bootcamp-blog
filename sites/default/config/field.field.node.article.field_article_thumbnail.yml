@@ -1,0 +1,33 @@
+uuid: ab97e4a2-29dc-489f-93eb-3827781f1c4b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_article_thumbnail
+    - media.type.image
+    - node.type.article
+  content:
+    - 'media:image:a08ab5f2-69b8-4f55-940a-7d9c55d0c88b'
+id: node.article.field_article_thumbnail
+field_name: field_article_thumbnail
+entity_type: node
+bundle: article
+label: 'Article Thumbnail'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    weight: '0'
+    target_uuid: a08ab5f2-69b8-4f55-940a-7d9c55d0c88b
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
